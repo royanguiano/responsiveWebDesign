@@ -216,6 +216,16 @@
                 2. flexbox layout
                 3. css grid layout
 
+            components:
+                - utilities classes
+                - background-clip property
+                - transform multiple properties simultaneously
+                - outline-offset together with outline
+                - style elements while not hover
+
+            html resources: 
+                - symbols/signs
+                    https://css-tricks.com/snippets/html/glyphs/
 
 
 

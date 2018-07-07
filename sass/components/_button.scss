@@ -9,7 +9,7 @@
         transition: all .2s;
         position: relative;
         animation: moveInButtonBottom .2s ease-in;
-        font-size: 1.6rem;
+        font-size: $defualt-font-size;
     }
     &--white {
         background-color: $color-white;
@@ -43,5 +43,28 @@
     &--animated {
         animation: movInButton .5s ease-out .75s;
         animation-fill-mode: backwards;
+    }
+}
+
+.btn-text {
+    &:link,
+    &:visited {
+        font-size: $defualt-font-size;
+        color: $color-light-green;
+        text-decoration: none;
+        display: inline-block;
+        border-bottom: 1px solid $color-light-green;
+        padding: 3px;
+        transition: all .3s;
+    }
+    &:active {
+        box-shadow: 0 .5rem 1rem rgba($color-black, .15);
+        transform: translateY(0);
+    }
+    &:hover {
+        background-color: $color-light-green;
+        color: $color-white;
+        box-shadow: 0 1rem 2rem rgba($color-black, .15);
+        transform: translateY(-2px);
     }
 }

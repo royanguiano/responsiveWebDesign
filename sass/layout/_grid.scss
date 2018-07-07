@@ -1,6 +1,6 @@
 .row {
     max-width: $grid-width;
-    background-color: #eee;
+    //background-color: #eee;
     margin: 0 auto;
 
     &:not(:last-child){
@@ -14,7 +14,7 @@
     // $="col" select all elements that end with col
 
     [class^="col-"]{
-        background-color: coral;
+        //background-color: coral;
         float: left;
 
         &:not(:last-child){
