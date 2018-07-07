@@ -211,6 +211,10 @@
             rm = remove file completely
             rm ~r = remove directory completely
             
+            type of layouts
+                1. float layout
+                2. flexbox layout
+                3. css grid layout
 
 
 
