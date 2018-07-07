@@ -1,0 +1,23 @@
+{
+  "name": "starter",
+  "version": "1.0.0",
+  "description": "#resources used https://bennettfeely.com/clippy/ * for clip-path: poligons(x y, x y, x y, x y);",
+  "main": "index.js",
+  "scripts": {
+    "compile:sass": "node-sass sass/main.scss css/style.css"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/royanguiano/responsiveWebDesign.git"
+  },
+  "author": "roy anguiano",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/royanguiano/responsiveWebDesign/issues"
+  },
+  "homepage": "https://github.com/royanguiano/responsiveWebDesign#readme",
+  "devDependencies": {
+    "node-sass": "^4.9.1"
+  },
+  "dependencies": {}
+}
