@@ -4,7 +4,7 @@
   "description": "#resources used https://bennettfeely.com/clippy/ * for clip-path: poligons(x y, x y, x y, x y);",
   "main": "index.js",
   "scripts": {
-    "compile:sass": "node-sass sass/main.scss css/style.css"
+    "compile:sass": "node-sass sass/main.scss css/style.css -w"
   },
   "repository": {
     "type": "git",
