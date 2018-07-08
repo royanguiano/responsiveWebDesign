@@ -30,10 +30,26 @@ direct child selector
     }
 
 notes on lecture: 
-how to build a rotating card effect
-how to use perspective in css
-how to use backface-visibility property
+how to build a rotating card effect?
+    parent element: positin relative;
+    child element: position: absolute; //describe top, left, right, bottom
+    then, 
+
+    &:hover &__side--front {
+        transform: rotateY(-180deg);
+    }
+    &:hover &__side--back {
+        transform: rotateY(0);
+    }
+how to use perspective in css?
+    perspective: 150rem;
+    -moz-perspective: 150rem;
+how to use backface-visibility property?
+    backface-visibility: hidden; //hides the backside of an element
 background blend modes
-how and when to use box-decoration-break
+      background-blend-mode: hue;
+how and when to use box-decoration-break?
+    -webkit-box-decoration-break: clone;
+    box-decoration-break: clone;
 
  */
