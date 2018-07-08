@@ -147,6 +147,33 @@ body {
   .row .col-3-of-4 {
     width: calc(((100% - 3 * 6rem) / 4 * 3 ) + 2 * 6rem); }
 
+.composition {
+  position: relative; }
+  .composition__photo {
+    width: 55%;
+    border-radius: 13px;
+    box-shadow: 0 1.5rem 4rem rgba(0, 0, 0, 0.4);
+    position: absolute;
+    z-index: 10;
+    transition: all .2s;
+    outline-offset: 2rem; }
+    .composition__photo--p1 {
+      left: -1rem;
+      top: -2rem; }
+    .composition__photo--p2 {
+      right: 0;
+      top: 0; }
+    .composition__photo--p3 {
+      top: 10rem;
+      left: 20%; }
+    .composition__photo:hover {
+      outline: 1.5rem solid #7ed56f;
+      transform: scale(1.05) scaleY(0.5rem);
+      box-shadow: 0 2.5rem 4rem rgba(0, 0, 0, 0.5);
+      z-index: 20; }
+  .composition:hover .composition__photo:not(:hover) {
+    transform: scale(0.9); }
+
 .btn:link, .btn:visited {
   display: inline-block;
   text-transform: uppercase;
@@ -208,7 +235,40 @@ body {
   box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.15);
   transform: translateY(-2px); }
 
+.feature-box {
+  font-size: 1.5rem;
+  padding: 2.5rem;
+  text-align: center;
+  box-shadow: 0 1.5rem 4rem rgba(0, 0, 0, 0.2);
+  border-radius: 3px;
+  background-color: rgba(255, 255, 255, 0.8);
+  transition: transform .2s; }
+  .feature-box__icon {
+    font-size: 5rem;
+    padding-bottom: .5rem;
+    display: inline-block;
+    background-image: linear-gradient(to right, #55c57a, #28b485);
+    -webkit-background-clip: text;
+    color: transparent; }
+  .feature-box:hover {
+    transform: translateY(-1.5rem) scale(1.04);
+    box-shadow: 0 2rem 8rem rgba(0, 0, 0, 0.4); }
+
 .section-about {
   background-color: #f3f2f2d2;
   padding: 25rem 0;
   margin-top: -20vh; }
+
+.section-features {
+  padding: 20rem 0;
+  background-image: linear-gradient(to right bottom, rgba(85, 197, 122, 0.8), rgba(40, 180, 133, 0.8)), url(../img/nat-4.jpg);
+  background-size: cover;
+  transform: skewY(-7deg);
+  margin-top: -10rem; }
+  .section-features > * {
+    transform: skewY(7deg); }
+
+.section-tours {
+  padding: 25rem 0 50rem 0;
+  background-color: #f3f2f2d2;
+  margin-top: -10rem; }

@@ -226,6 +226,11 @@
             html resources: 
                 - symbols/signs
                     https://css-tricks.com/snippets/html/glyphs/
+                - icons
+                    http://linea.io/
+                    
+
+            
 
 
 
